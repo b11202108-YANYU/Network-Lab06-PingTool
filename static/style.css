@@ -1,0 +1,194 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f3f6fb;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  padding: 28px 16px;
+}
+
+.card {
+  width: min(100%, 460px);
+  padding: 36px;
+  border: 1px solid #e5eaf2;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 18px 50px rgb(35 55 90 / 8%);
+}
+
+.eyebrow {
+  color: #5071cc;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+}
+
+h1 {
+  margin: 10px 0 8px;
+  font-size: 28px;
+  letter-spacing: -0.04em;
+}
+
+.intro,
+.footnote {
+  color: #778196;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.intro {
+  margin: 0 0 28px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+input {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #dce2ec;
+  border-radius: 9px;
+  outline: none;
+  color: inherit;
+  background: #fff;
+  font: inherit;
+}
+
+input:focus {
+  border-color: #5a78d0;
+  box-shadow: 0 0 0 3px rgb(90 120 208 / 14%);
+}
+
+button {
+  min-height: 48px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  background: #4263c7;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover {
+  background: #3453b3;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.arrow {
+  font-size: 18px;
+}
+
+.result {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #e6eaf1;
+  border-radius: 12px;
+  background: #fafbfe;
+}
+
+.result-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.result h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status.ok {
+  color: #18794e;
+  background: #e5f6ed;
+}
+
+.status.fail {
+  color: #b42318;
+  background: #ffebe9;
+}
+
+.result-target {
+  margin: 10px 0 16px;
+  color: #788196;
+  font-size: 13px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.metric {
+  padding: 12px;
+  border: 1px solid #e9edf4;
+  border-radius: 9px;
+  background: #fff;
+}
+
+.metric-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #788196;
+  font-size: 12px;
+}
+
+.metric strong {
+  font-size: 17px;
+}
+
+.error {
+  margin: 18px 0 0;
+  color: #b42318;
+  font-size: 13px;
+}
+
+.footnote {
+  margin: 18px 0 0;
+  font-size: 12px;
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: 26px 22px;
+  }
+}
